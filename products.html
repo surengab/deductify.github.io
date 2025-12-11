@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productify: #1 Habit Tracker App for Productivity & Goal Achievement | Deductify</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#06B6D4',
+                        accent: '#F59E0B'
+                    },
+                    fontFamily: {
+                        'display': ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="description" content="Transform your life with Productify - the #1 rated habit tracker app. Build lasting habits, boost productivity by 300%, and achieve your goals faster. Free download with premium features.">
+    <meta name="keywords" content="habit tracker app, best habit tracker 2025, productivity app, daily habits, goal tracking, habit building, personal development, iOS habit tracker, free habit tracker, Productify app">
+    <meta name="author" content="Deductify">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://deductify.org/productify-habit-tracker">
+    
+    <!-- Enhanced Open Graph Meta Tags -->
+    <meta property="og:title" content="Productify: #1 Habit Tracker App - Build Better Habits in 21 Days">
+    <meta property="og:description" content="Join 500K+ users who transformed their lives with Productify. Track habits, visualize progress, and achieve goals 3x faster. Download free on iOS.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://deductify.org/productify-habit-tracker">
+    <meta property="og:image" content="https://deductify.org/productify-og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Deductify">
+    <meta property="article:published_time" content="2025-06-05T00:00:00Z">
+    <meta property="article:modified_time" content="2025-06-05T00:00:00Z">
+    <meta property="article:author" content="Deductify Team">
+    
+    <!-- Enhanced Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@deductify">
+    <meta name="twitter:creator" content="@deductify">
+    <meta name="twitter:title" content="Productify: Transform Your Life with the #1 Habit Tracker App">
+    <meta name="twitter:description" content="Build lasting habits and boost productivity by 300%. Join 500K+ users who achieved their goals with Productify. Free download!">
+    <meta name="twitter:image" content="https://deductify.org/productify-twitter-card.jpg">
+    
+    <!-- Enhanced Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": ["SoftwareApplication", "MobileApplication", "Article"],
+        "name": "Productify - Habit Tracker",
+        "applicationCategory": "ProductivityApplication",
+        "operatingSystem": ["iOS", "iPhone", "iPad"],
+        "datePublished": "2025-06-05",
+        "dateModified": "2025-06-05",
+        "headline": "Productify: #1 Habit Tracker App for Productivity & Goal Achievement",
+        "description": "Transform your life with Productify - the #1 rated habit tracker app. Build lasting habits, boost productivity by 300%, and achieve your goals faster.",
+        "image": "https://deductify.org/productify-hero-image.jpg",
+        "author": {
+            "@type": "Organization",
+            "name": "Deductify",
+            "url": "https://deductify.org"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Deductify",
+            "url": "https://deductify.org",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://deductify.org/logo.png"
+            }
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "12547",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "downloadUrl": "https://apps.apple.com/us/app/habit-tracker-productify/id1389900237",
+        "installUrl": "https://apps.apple.com/us/app/habit-tracker-productify/id1389900237",
+        "screenshot": [
+            "https://deductify.org/screenshot1.jpg",
+            "https://deductify.org/screenshot2.jpg",
+            "https://deductify.org/screenshot3.jpg",
+            "https://deductify.org/screenshot4.jpg"
+        ]
+    }
+    </script>
+    
+    <!-- Performance and Security -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-blue-50 font-display antialiased">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-200 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-sm">P</span>
+                    </div>
+                    <span class="font-bold text-xl text-gray-900">Productify</span>
+                </div>
+                <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237" 
+                   class="bg-primary hover:bg-indigo-700 text-white px-4 py-2 rounded-lg font-medium transition-all transform hover:scale-105">
+                    Download Free
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-20 pb-16 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5"></div>
+        <div class="container mx-auto px-4 relative">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-flex items-center bg-accent/10 text-accent px-4 py-2 rounded-full text-sm font-medium mb-8">
+                    ⭐ #1 Rated Habit Tracker • 500K+ Active Users
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+                    Transform Your Life with
+                    <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Better Habits
+                    </span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+                    Build lasting habits, boost productivity by 300%, and achieve your goals faster with Productify - the most intuitive habit tracker app trusted by half a million users.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                    <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237" 
+                       class="bg-primary hover:bg-indigo-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        📱 Download Free on iOS
+                    </a>
+                    <div class="flex items-center text-gray-600">
+                        <span class="text-yellow-500 mr-2">★★★★★</span>
+                        <span class="font-medium">4.8/5 (12,547 reviews)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <!-- Features Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Why 500K+ Users Choose Productify</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Scientifically designed features that make habit building effortless and enjoyable
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">📊</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Visual Progress Tracking</h3>
+                    <p class="text-gray-600">See your progress with beautiful charts, streaks, and statistics that keep you motivated every day.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">🎯</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Smart Goal Setting</h3>
+                    <p class="text-gray-600">Set realistic, achievable goals with our AI-powered recommendations based on successful users' patterns.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">🔔</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Gentle Reminders</h3>
+                    <p class="text-gray-600">Stay on track with customizable, non-intrusive notifications that adapt to your schedule.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">🏆</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Achievement System</h3>
+                    <p class="text-gray-600">Unlock badges, celebrate milestones, and maintain motivation with our gamified approach.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-gradient-to-r from-secondary to-accent rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">📱</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Intuitive Interface</h3>
+                    <p class="text-gray-600">Beautifully designed, easy-to-use interface that makes tracking habits a pleasure, not a chore.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+                    <div class="w-12 h-12 bg-gradient-to-r from-accent to-primary rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-white text-xl">⚡</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Lightning Fast</h3>
+                    <p class="text-gray-600">Log habits in seconds with our quick-entry system. No complex forms or time-consuming processes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Screenshots Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">See Productify in Action</h2>
+                <p class="text-xl text-gray-600">Screenshots from real users building better habits</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Screenshot 1: Daily Dashboard -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all bg-gradient-to-br from-blue-50 to-indigo-100">
+                    <div class="w-full h-96 flex flex-col justify-center items-center p-8 group-hover:scale-105 transition-transform duration-300">
+                        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-sm">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-bold text-lg">Today's Habits</h3>
+                                <span class="text-2xl">📱</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-green-50 rounded-xl">
+                                    <div class="flex items-center">
+                                        <span class="text-xl mr-3">🦷</span>
+                                        <span class="font-medium">Brush Teeth</span>
+                                    </div>
+                                    <span class="text-green-500 text-xl">✓</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-blue-50 rounded-xl">
+                                    <div class="flex items-center">
+                                        <span class="text-xl mr-3">🧘</span>
+                                        <span class="font-medium">Stretch</span>
+                                    </div>
+                                    <span class="text-blue-500 text-xl">✓</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                                    <div class="flex items-center">
+                                        <span class="text-xl mr-3">📚</span>
+                                        <span class="font-medium">Read</span>
+                                    </div>
+                                    <span class="text-gray-400 text-xl">○</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Daily Dashboard</h4>
+                            <p class="text-sm opacity-90">Track all your habits at a glance</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Screenshot 2: Progress Analytics -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all bg-gradient-to-br from-purple-50 to-pink-100">
+                    <div class="w-full h-96 flex flex-col justify-center items-center p-8 group-hover:scale-105 transition-transform duration-300">
+                        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-sm">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-bold text-lg">February Stats</h3>
+                                <span class="text-2xl">📊</span>
+                            </div>
+                            <div class="space-y-4">
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-primary mb-1">85%</div>
+                                    <div class="text-sm text-gray-600">Completion Rate</div>
+                                </div>
+                                <div class="grid grid-cols-7 gap-1">
+                                    <div class="w-6 h-6 bg-green-500 rounded"></div>
+                                    <div class="w-6 h-6 bg-green-500 rounded"></div>
+                                    <div class="w-6 h-6 bg-green-500 rounded"></div>
+                                    <div class="w-6 h-6 bg-yellow-500 rounded"></div>
+                                    <div class="w-6 h-6 bg-green-500 rounded"></div>
+                                    <div class="w-6 h-6 bg-green-500 rounded"></div>
+                                    <div class="w-6 h-6 bg-red-500 rounded"></div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-orange-500 mb-1">12🔥</div>
+                                    <div class="text-sm text-gray-600">Current Streak</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Progress Analytics</h4>
+                            <p class="text-sm opacity-90">Visualize your improvement over time</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Screenshot 3: Habit Templates -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all bg-gradient-to-br from-green-50 to-emerald-100">
+                    <div class="w-full h-96 flex flex-col justify-center items-center p-8 group-hover:scale-105 transition-transform duration-300">
+                        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-sm">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-bold text-lg">Add Habit</h3>
+                                <span class="text-2xl">➕</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center p-3 bg-blue-50 rounded-xl hover:bg-blue-100 cursor-pointer">
+                                    <span class="text-xl mr-3">🚶</span>
+                                    <span class="font-medium">Walk 10k Steps</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-green-50 rounded-xl hover:bg-green-100 cursor-pointer">
+                                    <span class="text-xl mr-3">🏋️</span>
+                                    <span class="font-medium">Gym Workout</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-purple-50 rounded-xl hover:bg-purple-100 cursor-pointer">
+                                    <span class="text-xl mr-3">📖</span>
+                                    <span class="font-medium">Read 30 min</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-yellow-50 rounded-xl hover:bg-yellow-100 cursor-pointer">
+                                    <span class="text-xl mr-3">💧</span>
+                                    <span class="font-medium">Drink Water</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Habit Templates</h4>
+                            <p class="text-sm opacity-90">Choose from 100+ pre-built habits</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Screenshot 4: Settings -->
+                <div class="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all bg-gradient-to-br from-orange-50 to-yellow-100">
+                    <div class="w-full h-96 flex flex-col justify-center items-center p-8 group-hover:scale-105 transition-transform duration-300">
+                        <div class="bg-white rounded-3xl shadow-2xl p-6 w-full max-w-sm">
+                            <div class="flex items-center justify-between mb-4">
+                                <h3 class="font-bold text-lg">Settings</h3>
+                                <span class="text-2xl">⚙️</span>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                                    <span class="font-medium">🌙 Dark Mode</span>
+                                    <div class="w-12 h-6 bg-primary rounded-full flex items-center justify-end pr-1">
+                                        <div class="w-4 h-4 bg-white rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                                    <span class="font-medium">🔔 Notifications</span>
+                                    <div class="w-12 h-6 bg-primary rounded-full flex items-center justify-end pr-1">
+                                        <div class="w-4 h-4 bg-white rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 rounded-xl">
+                                    <span class="font-medium">🔐 Privacy</span>
+                                    <span class="text-gray-400">›</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div class="absolute bottom-4 left-4 text-white">
+                            <h4 class="font-semibold">Customization</h4>
+                            <p class="text-sm opacity-90">Personalize your experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Users Say</h2>
+                <p class="text-xl text-gray-600">Real stories from people who transformed their lives</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="text-yellow-500 mb-4">★★★★★</div>
+                    <p class="text-gray-700 mb-6">"Productify helped me build a consistent morning routine. I've maintained a 60-day streak and feel more productive than ever!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold mr-3">S</div>
+                        <div>
+                            <div class="font-semibold">Sarah Chen</div>
+                            <div class="text-sm text-gray-500">Product Manager</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="text-yellow-500 mb-4">★★★★★</div>
+                    <p class="text-gray-700 mb-6">"The visual progress tracking is incredible. Seeing my streaks grow keeps me motivated to stick with my habits daily."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-white font-bold mr-3">M</div>
+                        <div>
+                            <div class="font-semibold">Marcus Johnson</div>
+                            <div class="text-sm text-gray-500">Fitness Coach</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 shadow-lg">
+                    <div class="text-yellow-500 mb-4">★★★★★</div>
+                    <p class="text-gray-700 mb-6">"Simple, beautiful, and effective. Productify made habit tracking so easy that I actually stick with it this time!"</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 bg-accent rounded-full flex items-center justify-center text-white font-bold mr-3">E</div>
+                        <div>
+                            <div class="font-semibold">Emily Rodriguez</div>
+                            <div class="text-sm text-gray-500">Student</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-gradient-to-r from-primary to-secondary rounded-3xl p-12 text-center text-white mb-16">
+            <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Life?</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Join over 500,000 users who have already built life-changing habits with Productify. Start your transformation today - it's completely free!
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237" 
+                   class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-xl font-semibold text-lg transition-all transform hover:scale-105 shadow-lg">
+                    📱 Download Free Now
+                </a>
+                <div class="text-white/80">
+                    <div class="font-medium">✅ No credit card required</div>
+                    <div class="text-sm">⚡ Setup takes less than 2 minutes</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-gray-600">Everything you need to know about Productify</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <details class="bg-white rounded-2xl p-6 shadow-lg group">
+                    <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+                        Is Productify really free to use?
+                        <span class="transform group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Yes! Productify is completely free to download and use. We offer premium features for advanced users, but the core habit tracking functionality is always free.</p>
+                </details>
+                
+                <details class="bg-white rounded-2xl p-6 shadow-lg group">
+                    <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+                        How long does it take to build a habit with Productify?
+                        <span class="transform group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Research shows it takes 21-66 days to form a new habit. With Productify's streak tracking and motivation features, our users typically see lasting habit formation within 30 days.</p>
+                </details>
+                
+                <details class="bg-white rounded-2xl p-6 shadow-lg group">
+                    <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+                        Can I track multiple habits at once?
+                        <span class="transform group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Absolutely! You can track unlimited habits with Productify. We recommend starting with 2-3 habits and gradually adding more as you build consistency.</p>
+                </details>
+                
+                <details class="bg-white rounded-2xl p-6 shadow-lg group">
+                    <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+                        Is my data private and secure?
+                        <span class="transform group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="mt-4 text-gray-600">Yes, your privacy is our priority. All data is encrypted and stored securely. We never share your personal information with third parties.</p>
+                </details>
+            </div>
+        </section>
+
+        <!-- Deductify Integration -->
+        <section class="bg-white rounded-3xl p-12 shadow-lg text-center">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Discover More Productivity Tools</h2>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                Productify is part of the Deductify ecosystem - your one-stop destination for productivity tools, financial insights, and personal growth resources.
+            </p>
+            <a href="https://deductify.org" 
+               class="inline-flex items-center bg-gradient-to-r from-primary to-secondary text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-lg transition-all transform hover:scale-105">
+                Explore Deductify →
+            </a>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">P</span>
+                        </div>
+                        <span class="font-bold text-xl">Productify</span>
+                    </div>
+                    <p class="text-gray-400">Transform your life with better habits. Join 500K+ users building lasting routines.</p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white transition">Reviews</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Twitter</a></li>
+                        <li><a href="#" class="hover:text-white transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">© 2025 Deductify. All rights reserved.</p>
+                <p class="mt-2">
+                    <a href="https://deductify.org" class="text-blue-400 hover:text-blue-300 transition">
+                        Part of the Deductify Productivity Suite
+                    </a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Analytics and Performance -->
+    <script>
+        // Add smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add loading animation for images
+        document.querySelectorAll('img').forEach(img => {
+            img.addEventListener('load', function() {
+                this.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>

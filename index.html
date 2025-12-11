@@ -1,0 +1,190 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover daily habits to improve your life with our blog on water drinking, walking, and more. Download Productify, the ultimate AI habit tracker app for iOS.">
+  <meta name="keywords" content="daily habits, habit tracker, productify, water drinking, walking, productivity, iOS app, self-improvement">
+  <meta name="author" content="Productify Team">
+  <title>Daily Habits & Productify - AI Habit Tracker App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Daily Habits & Productify - AI Habit Tracker App">
+  <meta property="og:description" content="Explore tips on daily habits like water drinking and walking. Download Productify, the AI-powered habit tracker for iOS.">
+  <meta property="og:image" content="https://yourdomain.com/images/productify-og.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    /* Custom styles for fast loading and responsiveness */
+    body { font-family: 'Inter', sans-serif; }
+    .lazy-img { opacity: 0; transition: opacity 0.3s; }
+    .lazy-img.loaded { opacity: 1; }
+    @media (max-width: 640px) {
+      .hero-section { background-image: url('mobile-hero.jpg'); }
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <a href="/" class="text-2xl font-bold text-indigo-600">Daily Habits</a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#blog" class="text-gray-700 hover:text-indigo-600">Blog</a>
+          <a href="#app" class="text-gray-700 hover:text-indigo-600">App</a>
+          <a href="#contact" class="text-gray-700 hover:text-indigo-600">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-cover bg-center h-96 flex items-center justify-center text-white" style="background-image: url('hero-bg.jpg')">
+    <div class="text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Build Better Habits Today</h1>
+      <p class="text-lg md:text-xl mb-6">Explore our blog for daily habit tips and download Productify, the AI-powered habit tracker.</p>
+      <a href="https://apps.apple.com/us/app/habit-tracker-ai-habituary/id1389900237" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Download Productify</a>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Daily Habits Blog</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Blog Post 1 -->
+        <article class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <img data-src="water-drinking.jpg" alt="Water Drinking Habit" class="lazy-img w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold mb-2">The Power of Drinking Water Daily</h3>
+          <p class="text-gray-600 mb-4">Learn how staying hydrated can boost your energy, improve focus, and enhance your overall health.</p>
+          <a href="/blog/water-drinking" class="text-indigo-600 hover:underline">Read More</a>
+        </article>
+        <!-- Blog Post 2 -->
+        <article class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <img data-src="walking.jpg" alt="Walking Habit" class="lazy-img w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold mb-2">Why Walking 10,000 Steps Matters</h3>
+          <p class="text-gray-600 mb-4">Discover the benefits of walking for physical health, mental clarity, and stress reduction.</p>
+          <a href="/blog/walking.html" class="text-indigo-600 hover:underline">Read More</a>
+        </article>
+        <!-- Blog Post 3 -->
+        <article class="bg-gray-50 p-6 rounded-lg shadow-md">
+          <img data-src="morning-routine.jpg" alt="Morning Routine" class="lazy-img w-full h-48 object-cover rounded-md mb-4">
+          <h3 class="text-xl font-semibold mb-2">Crafting a Productive Morning Routine</h3>
+          <p class="text-gray-600 mb-4">Start your day right with habits that set you up for success and productivity.</p>
+          <a href="/blog/morning-routine" class="text-indigo-600 hover:underline">Read More</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- App Section -->
+  <section id="app" class="py-16 bg-indigo-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Productify - AI Habit Tracker</h2>
+          <p class="text-gray-600 mb-6">Transform your routine with Productify, the ultimate AI-powered habit tracker. Track your daily habits, set reminders, and achieve your goals with ease. Available now on the App Store!</p>
+          <a href="https://apps.apple.com/us/app/habit-tracker-ai-habituary/id1389900237" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700">Download on the App Store</a>
+        </div>
+        <div class="md:w-1/2 mt-6 md:mt-0">
+          <img data-src="productify-app.jpg" alt="Productify App Screenshot" class="lazy-img w-full rounded-lg shadow-md">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Get in Touch</h2>
+      <p class="text-gray-600 mb-6 text-center">Have questions or feedback? Reach out to us at contact@deductify.org</p>
+      <div class="max-w-md mx-auto">
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700">Email</label>
+          <input type="email" id="email" class="w-full p-2 border rounded-md" placeholder="your@email.com">
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700">Message</label>
+          <textarea id="message" class="w-full p-2 border rounded-md" rows="4" placeholder="Your message"></textarea>
+        </div>
+        <button onclick="alert('Form submission is disabled in this demo.')" class="bg-indigo-600 text-white px-6 py-3 rounded-lg hover:bg-indigo-700 w-full">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <p>© 2025 Daily Habits. All rights reserved.</p>
+        <div class="flex space-x-4 mt-4 md:mt-0">
+          <a href="https://twitter.com/productifyapp" class="hover:text-indigo-400">Twitter</a>
+          <a href="https://facebook.com/productifyapp" class="hover:text-indigo-400">Facebook</a>
+          <a href="https://instagram.com/productifyapp" class="hover:text-indigo-400">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript for Lazy Loading Images -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = document.querySelectorAll('.lazy-img');
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            img.src = img.dataset.src;
+            img.classList.add('loaded');
+            observer.unobserve(img);
+          }
+        });
+      });
+      images.forEach(img => observer.observe(img));
+    });
+  </script>
+</body>
+</html>
