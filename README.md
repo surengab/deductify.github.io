@@ -1,71 +1,102 @@
-# [Start Bootstrap - Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/)
+# Deductify — deductify.org
 
-[Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/) is a stylish, responsive blog theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working PHP contact form.
+Independent iOS studio website. Static HTML/CSS hosted on GitHub Pages with custom domain `deductify.org`.
 
-## Preview
+---
 
-[![Clean Blog Preview](https://startbootstrap.com/assets/img/templates/clean-blog.jpg)](https://blackrockdigital.github.io/startbootstrap-clean-blog/)
+## TODO: Items to resolve before publishing
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-clean-blog/)**
+### High priority — required for launch
 
-## Status
+| # | File(s) | What to do |
+|---|---------|------------|
+| 1 | Every page — JSON-LD `<script>` | Replace `"TODO: Add founder name"` with the real founder name |
+| 2 | Every page — JSON-LD `<script>` | Replace `"TODO: Add founding year"` with the 4-digit founding year (e.g. `"2018"`) |
+| 3 | `about/index.html` | Fill in the `<!-- TODO: Add founder bio -->` comments with 2–3 sentences of real bio text |
+| 4 | `about/index.html` | Add the studio location (city/country) in the `<dd>` under "Location" |
+| 5 | Contact form in `contact/index.html` | Set the `action=""` attribute on `<form>` to a real endpoint. Options: [Formspree](https://formspree.io/), [Netlify Forms](https://www.netlify.com/products/forms/), or a custom backend. Mark the `TODO` comment done once wired. |
+| 6 | `products/plantive/index.html` | Confirm the Plantive marketing site domain. Currently set to `https://plantiveapp.com/`. Update all three occurrences if different. |
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-clean-blog/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-clean-blog.svg)](https://www.npmjs.com/package/startbootstrap-clean-blog)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-clean-blog.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-clean-blog)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-clean-blog?type=dev)
+### Assets — all images are placeholders until added
 
-## Download and Installation
+Place final images at these exact paths (WebP primary, PNG fallback):
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/clean-blog/)
-* Install via npm: `npm i startbootstrap-clean-blog`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-clean-blog.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-clean-blog)
+| Asset | Path | Dimensions | Notes |
+|-------|------|------------|-------|
+| OG / social share image | `/og-deductify.webp` | 1200×630px | Used on every page for social sharing |
+| Favicon (PNG) | `/favicon.png` | 32×32px or 180×180px | Browser tab icon |
+| Favicon (ICO) | `/favicon.ico` | 32×32px | Legacy browser fallback |
+| Deductify logo | `/assets/images/deductify-logo.webp` | Flexible | Used in JSON-LD `logo` field |
+| Founder photo (hero) | `/assets/images/founder-photo.webp` | 88×88px | Circular crop, replaces the "D" placeholder in `index.html` hero |
+| Founder photo (about) | `/assets/images/founder-photo.webp` | 140×140px | Same file, circular crop, replaces placeholder in `about/index.html` |
+| Productify app icon | `/assets/images/productify-icon.webp` + `.png` | 72×72px (cards), 110×110px (product page) | Export from App Store Connect |
+| Plantive app icon | `/assets/images/plantive-icon.webp` + `.png` | 72×72px (cards), 110×110px (product page) | Export from App Store Connect |
+| Productify screenshot 1 | `/assets/images/productify-screenshot-1.webp` + `.png` | 9:19.5 ratio | iPhone screenshot, portrait |
+| Productify screenshot 2 | `/assets/images/productify-screenshot-2.webp` + `.png` | 9:19.5 ratio | iPhone screenshot, portrait |
+| Productify screenshot 3 | `/assets/images/productify-screenshot-3.webp` + `.png` | 9:19.5 ratio | iPhone screenshot, portrait |
+| Plantive screenshot 1 | `/assets/images/plantive-screenshot-1.webp` + `.png` | 9:19.5 ratio | iPhone screenshot, portrait |
+| Plantive screenshot 2 | `/assets/images/plantive-screenshot-2.webp` + `.png` | 9:19.5 ratio | iPhone screenshot, portrait |
+| Plantive screenshot 3 | `/assets/images/plantive-screenshot-3.webp` + `.png` | 9:19.5 ratio | iPhone screenshot, portrait |
 
-## Usage
+To convert existing JPG/PNG to WebP: `cwebp -q 85 input.png -o output.webp`
 
-### Basic Usage
+Once founder photo is ready, replace the CSS placeholder `<div class="hero-mark">` in `index.html` with:
+```html
+<div class="hero-mark">
+  <picture>
+    <source srcset="/assets/images/founder-photo.webp" type="image/webp">
+    <img src="/assets/images/founder-photo.png" alt="[Founder name]" width="88" height="88">
+  </picture>
+</div>
+```
+And replace the `<div class="founder-photo-placeholder">` in `about/index.html` with a `<picture>` element similarly.
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+### Post-launch checklist
 
-### Advanced Usage
+- [ ] Submit `https://deductify.org/sitemap.xml` to [Google Search Console](https://search.google.com/search-console)
+- [ ] Submit sitemap to [Bing Webmaster Tools](https://www.bing.com/webmasters)
+- [ ] Monitor Search Console for crawl errors for 2 weeks after launch
+- [ ] Update **App Store Connect** for both apps:
+  - Developer Website → `https://deductify.org/`
+  - Privacy Policy URL → `https://deductify.org/privacy.html`
+- [ ] Verify the CNAME file (`deductify.org`) is committed and GitHub Pages custom domain is configured in repo Settings → Pages
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+---
 
-#### Gulp Tasks
+## Redirect note (GitHub Pages)
 
-- `gulp` the default task that builds everything
-- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp sass` compiles SCSS files into CSS
-- `gulp minify-css` minifies the compiled CSS file
-- `gulp minify-js` minifies the themes JS file
-- `gulp copy` copies dependencies from node_modules to the vendor directory
+GitHub Pages does not support server-side 301 redirects. The old blog posts at:
 
-## Bugs and Issues
+- `/blog/water-drinking` → `https://productifyapp.org/blog/what-habits-to-track/`
+- `/blog/walking.html` → `https://productifyapp.org/blog/what-habits-to-track/`
+- `/blog/morning-routine` → `https://productifyapp.org/solutions/morning-routine/`
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-clean-blog/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/clean-blog/).
+…are handled by client-side meta-refresh pages already in place in `/blog/`. They use `<meta http-equiv="refresh">` plus a JavaScript `location.replace()` fallback.
 
-## Custom Builds
+If you migrate to a host that supports Apache or Nginx, use the rules in `.htaccess` (Apache) or adapt them for your Nginx config.
 
-You can hire Start Bootstrap to create a custom build of any template, or create something from scratch using Bootstrap. For more information, visit the **[custom design services page](https://startbootstrap.com/bootstrap-design-services/)**.
+---
 
-## About
+## File structure
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/gh-pages/LICENSE) license.
+```
+/
+├── index.html                    Homepage
+├── about/index.html              Founder + studio story
+├── products/
+│   ├── productify/index.html     Productify portfolio entry
+│   └── plantive/index.html       Plantive portfolio entry
+├── contact/index.html            Contact form
+├── privacy.html                  Privacy policy
+├── terms.html                    Terms of use
+├── styles.css                    Single stylesheet (all pages)
+├── robots.txt
+├── sitemap.xml
+├── CNAME                         GitHub Pages custom domain
+├── .htaccess                     Apache redirect reference (see note above)
+├── blog/
+│   ├── water-drinking.html       Redirect → productifyapp.org
+│   ├── walking.html              Redirect → productifyapp.org
+│   └── morning-routine.html      Redirect → productifyapp.org
+└── assets/images/                Drop all image assets here
+```
