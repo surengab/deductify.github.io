@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Productify is a calm daily habit tracker for iPhone by Deductify. No streaks pressure, no gamification — just an honest record of your routine. Available on the App Store.">
+  <meta name="description" content="Productify is a habit and goal tracker for iPhone, iPad, and Apple Watch by Deductify. Measurable goals, mood tracking, widgets, and Live Activities — with all your data stored locally on your device. Free on the App Store.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="Deductify">
   <link rel="canonical" href="https://deductify.org/products/productify/">
 
   <meta property="og:title" content="Productify — Habit Tracker for iPhone | Deductify">
-  <meta property="og:description" content="A calm daily habit tracker for iPhone. No gamification, no bloat — just an honest record of your routine. Download on the App Store.">
+  <meta property="og:description" content="A habit and goal tracker for iPhone and Apple Watch. Measurable goals, mood tracking, and widgets — with every entry stored locally on your device. Free on the App Store.">
   <meta property="og:url" content="https://deductify.org/products/productify/">
-  <meta property="og:image" content="https://deductify.org/og-deductify.webp">
+  <meta property="og:image" content="https://deductify.org/og-deductify.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
@@ -19,11 +19,12 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Productify — Habit Tracker for iPhone | Deductify">
-  <meta name="twitter:description" content="A calm daily habit tracker for iPhone. No gamification, no bloat — just an honest record of your routine.">
-  <meta name="twitter:image" content="https://deductify.org/og-deductify.webp">
+  <meta name="twitter:description" content="A habit and goal tracker for iPhone and Apple Watch. Measurable goals, mood tracking, and widgets — with every entry stored locally on your device.">
+  <meta name="twitter:image" content="https://deductify.org/og-deductify.jpg">
 
   <meta name="theme-color" content="#6B6FD4">
   <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles.css">
   <title>Productify — Habit Tracker for iPhone | Deductify</title>
 
@@ -33,13 +34,12 @@
     "@type": "Organization",
     "name": "Deductify",
     "url": "https://deductify.org/",
-    "logo": "https://deductify.org/assets/images/deductify-logo.webp",
+    "logo": "https://deductify.org/assets/images/deductify-logo.png",
     "email": "contact@deductify.org",
     "description": "Independent iOS studio building calm, focused apps for everyday life.",
     "sameAs": [
       "https://x.com/Productify_app",
       "https://www.instagram.com/productify.habits"
-      // TODO: Add Apple Developer URL to sameAs once located in App Store
     ]
   }
   </script>
@@ -48,10 +48,16 @@
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "name": "Productify",
-    "operatingSystem": "iOS",
+    "operatingSystem": "iOS 17.2 or later",
     "applicationCategory": "LifestyleApplication",
     "url": "https://productifyapp.org/",
     "downloadUrl": "https://apps.apple.com/us/app/habit-tracker-productify/id1389900237",
+    "description": "A habit and goal tracker for iPhone, iPad, and Apple Watch. Measurable goals, progress statistics, mood tracking, widgets, and Live Activities, with all data stored locally on the device.",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
     "author": {
       "@type": "Organization",
       "name": "Deductify",
@@ -88,17 +94,18 @@
     <section class="page-hero">
       <div class="container">
         <div class="product-hero-inner">
-          <!-- TODO: Replace src with /assets/images/productify-icon.webp (110×110px) -->
-          <picture>
-            <source srcset="/assets/images/productify-icon.webp" type="image/webp">
-            <img src="/assets/images/productify-icon.png"
-                 alt="Productify app icon"
-                 width="110" height="110"
-                 class="product-icon-large">
-          </picture>
+          <img src="/assets/images/productify-icon.png"
+               alt="Productify app icon"
+               width="110" height="110"
+               class="product-icon-large">
           <div class="product-hero-text">
             <h1>Productify</h1>
-            <p class="tagline">A daily habit tracker that stays out of your way.</p>
+            <p class="tagline">Track the habits and goals that matter — without handing your data to anyone.</p>
+            <ul class="product-facts" role="list">
+              <li>Free · iPhone, iPad &amp; Apple Watch</li>
+              <li>iOS 17.2 or later</li>
+              <li>On the App Store since 2018</li>
+            </ul>
             <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237"
                class="btn-appstore"
                target="_blank"
@@ -118,11 +125,45 @@
     <section class="page-body">
       <div class="container-sm">
 
-        <p>Productify is a daily habit tracker for iPhone built around a simple idea: consistency, not perfection, is what creates lasting change. The app gives you a clean, distraction-free space to record the habits that matter to you — nothing more.</p>
+        <p>Productify is a habit and goal tracker for iPhone built around a simple idea: consistency, not perfection, is what creates lasting change. You set goals specific enough to be answerable — <em>walk 12,000 steps</em>, <em>drink 8 glasses of water</em>, <em>meditate for 10 minutes</em>, <em>call a friend every Sunday</em> — and Productify keeps the record. Start from ready-made habits or write your own.</p>
 
-        <p>It's designed for people who want a tool that works quietly in the background of their day. There's no streak system that punishes a missed day, no social feed, no badges or gamification mechanics designed to manufacture engagement. You open it, mark what you did, and close it. Over time, an honest picture of your patterns emerges.</p>
+        <p>What you get back is a picture of your actual routine rather than a scoreboard. Progress views show how a habit has held up over weeks and months, and the mood tracker sits alongside them, so the connection between what you do and how you feel stops being a guess.</p>
 
-        <p>Productify works well for anyone building or maintaining a personal routine — morning rituals, exercise, reading, hydration, meditation, creative practice. If you've been burned by habit apps that felt like another thing demanding your attention, Productify was built for you.</p>
+        <h2>What's in the app</h2>
+        <div class="feature-grid">
+          <div class="feature-item">
+            <h3>Goals you can measure</h3>
+            <p>Step counts, glasses of water, minutes of practice — targets with a number attached, so "did I do it?" always has an answer.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Progress you can read</h3>
+            <p>Clear stats and history across days, weeks, and months. See which habits are holding and which quietly slipped.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Mood tracking</h3>
+            <p>Log how you felt next to what you did. Patterns between routine and wellbeing surface on their own.</p>
+          </div>
+          <div class="feature-item">
+            <h3>AI progress insights</h3>
+            <p>An optional coach that reads your history and offers specific, personal observations rather than generic encouragement.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Widgets &amp; Live Activities</h3>
+            <p>Today's habits on your home and lock screen, and running timers or step counts live while you're doing them.</p>
+          </div>
+          <div class="feature-item">
+            <h3>Apple Watch companion</h3>
+            <p>Log a habit from your wrist. Nothing to open, nothing to unlock.</p>
+          </div>
+        </div>
+
+        <h2>Your data never leaves your phone</h2>
+
+        <p>Every habit, goal, mood entry, and progress record Productify keeps lives locally on your device. There is no account to create, no server storing your routine, and nothing to sell to anyone. This is worth stating plainly because most apps in this category cannot: your day is not our product.</p>
+
+        <h2>Who it's for</h2>
+
+        <p>Productify suits anyone building or maintaining a personal routine — morning rituals, exercise, reading, hydration, meditation, creative practice. It's a good fit if you want structure and a real record of your progress, and a poor fit if you're looking for a social feed, a leaderboard, or an app that pesters you into opening it.</p>
 
         <!-- CTA box -->
         <div class="product-cta-box">
@@ -149,29 +190,21 @@
 
         <!-- Screenshots -->
         <h2>Screenshots</h2>
-        <p>For full-resolution screenshots and App Store assets, see <a href="https://productifyapp.org/" target="_blank" rel="noopener">productifyapp.org</a>.</p>
+        <p>For the full feature tour and support, see <a href="https://productifyapp.org/" target="_blank" rel="noopener">productifyapp.org</a>.</p>
 
-        <!-- TODO: Add screenshots at /assets/images/productify-screenshot-1.webp, -2.webp, -3.webp -->
-        <!-- Portrait orientation, 9:19.5 aspect ratio, iPhone frame preferred -->
         <div class="product-screenshots" aria-label="Productify app screenshots">
-          <picture>
-            <source srcset="/assets/images/productify-screenshot-1.webp" type="image/webp">
-            <img src="/assets/images/productify-screenshot-1.png"
-                 alt="Productify home screen showing today's habits"
-                 loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="/assets/images/productify-screenshot-2.webp" type="image/webp">
-            <img src="/assets/images/productify-screenshot-2.png"
-                 alt="Productify weekly history view"
-                 loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="/assets/images/productify-screenshot-3.webp" type="image/webp">
-            <img src="/assets/images/productify-screenshot-3.png"
-                 alt="Productify habit editing screen"
-                 loading="lazy">
-          </picture>
+          <img src="/assets/images/productify-screenshot-1.jpg"
+               alt="Productify daily schedule showing habits grouped into morning, afternoon, and any time"
+               width="886" height="1575"
+               loading="lazy">
+          <img src="/assets/images/productify-screenshot-2.jpg"
+               alt="Productify habit library with ready-made habits grouped by Body and Mind"
+               width="886" height="1575"
+               loading="lazy">
+          <img src="/assets/images/productify-screenshot-3.jpg"
+               alt="Productify progress view showing 7- and 30-day completion rates per habit"
+               width="886" height="1575"
+               loading="lazy">
         </div>
 
       </div>

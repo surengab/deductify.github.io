@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Deductify is an independent iOS studio. We build calm, focused apps for everyday life — Productify (habit tracker) and Plantive (plant care).">
+  <meta name="description" content="Deductify is an independent iOS studio making focused iPhone apps: Productify, a habit and goal tracker that keeps your data on your device, and Plantive, a plant identifier with per-species care guidance. Both free on the App Store.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="Deductify">
   <link rel="canonical" href="https://deductify.org/">
 
   <meta property="og:title" content="Deductify — Independent iOS Studio">
-  <meta property="og:description" content="We build calm, focused iOS apps for everyday life. Meet Productify and Plantive.">
+  <meta property="og:description" content="Focused iPhone apps for everyday life. Productify tracks your habits without leaving your device. Plantive identifies any plant and tells you how to care for it.">
   <meta property="og:url" content="https://deductify.org/">
-  <meta property="og:image" content="https://deductify.org/og-deductify.webp">
+  <meta property="og:image" content="https://deductify.org/og-deductify.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:type" content="website">
@@ -19,8 +19,8 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Deductify — Independent iOS Studio">
-  <meta name="twitter:description" content="We build calm, focused iOS apps for everyday life. Meet Productify and Plantive.">
-  <meta name="twitter:image" content="https://deductify.org/og-deductify.webp">
+  <meta name="twitter:description" content="Focused iPhone apps for everyday life. Productify tracks your habits without leaving your device. Plantive identifies any plant and tells you how to care for it.">
+  <meta name="twitter:image" content="https://deductify.org/og-deductify.jpg">
   <meta property="og:locale" content="en_US">
   <meta property="og:image:alt" content="Deductify — Independent iOS Studio">
   <meta name="twitter:site" content="@Productify_app">
@@ -28,6 +28,7 @@
 
   <meta name="theme-color" content="#6B6FD4">
   <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles.css">
   <title>Deductify — Independent iOS Studio</title>
 
@@ -37,13 +38,12 @@
     "@type": "Organization",
     "name": "Deductify",
     "url": "https://deductify.org/",
-    "logo": "https://deductify.org/assets/images/deductify-logo.webp",
+    "logo": "https://deductify.org/assets/images/deductify-logo.png",
     "email": "contact@deductify.org",
     "description": "Independent iOS studio building calm, focused apps for everyday life.",
     "sameAs": [
       "https://x.com/Productify_app",
       "https://www.instagram.com/productify.habits"
-      // TODO: Add Apple Developer URL to sameAs once located in App Store
     ]
   }
   </script>
@@ -85,12 +85,17 @@
           <span class="hero-mark-letter">D</span>
         </div>
         <span class="section-label">Independent iOS Studio</span>
-        <h1>Deductify</h1>
-        <p class="hero-tagline">We build calm, focused iOS apps for everyday life.</p>
+        <h1>Apps that respect<br>your attention.</h1>
+        <p class="hero-tagline">Deductify builds focused iPhone apps for everyday life — a habit tracker that keeps your data on your device, and a plant identifier that tells you how to keep it alive.</p>
         <div class="hero-ctas">
-          <a href="/#portfolio" class="btn btn-primary">Our apps</a>
-          <a href="/about/" class="btn btn-outline">About</a>
+          <a href="/#portfolio" class="btn btn-primary">See our apps</a>
+          <a href="/about/" class="btn btn-outline">About the studio</a>
         </div>
+        <ul class="hero-meta" role="list">
+          <li>Built for iPhone, Apple Watch &amp; widgets</li>
+          <li>No ads, no tracking, no social feed</li>
+          <li>Shipping since 2018</li>
+        </ul>
       </div>
     </section>
 
@@ -99,23 +104,31 @@
       <div class="container">
         <div class="portfolio-header">
           <span class="section-label">Our Apps</span>
-          <h2>Two focused tools.<br>One guiding principle.</h2>
-          <p>Every app we ship does one thing well and gets out of your way.</p>
+          <h2>Two apps. Two everyday problems.</h2>
+          <p>Both are free to download on the App Store, built natively for iOS, and designed to be useful in seconds rather than minutes.</p>
         </div>
         <div class="portfolio-grid">
 
           <!-- Productify -->
           <article class="app-card">
-            <picture>
-              <source srcset="/assets/images/productify-icon.webp" type="image/webp">
+            <div class="app-card-head">
               <img src="/assets/images/productify-icon.png"
                    alt="Productify app icon"
                    width="72" height="72"
                    class="app-icon"
                    loading="lazy">
-            </picture>
-            <h3>Productify</h3>
-            <p class="app-card-desc">A daily habit tracker that stays out of your way. No streaks pressure, no social feed — just a calm record of what you did.</p>
+              <div>
+                <h3>Productify</h3>
+                <p class="app-card-kicker">Habit &amp; goal tracker</p>
+              </div>
+            </div>
+            <p class="app-card-desc">Set goals you can actually measure — walk 12,000 steps, drink 8 glasses, meditate 10 minutes — then watch the pattern build. Log your mood alongside your habits to see what your routine is really doing for you.</p>
+            <ul class="feature-chips" role="list">
+              <li>Data stays on your device</li>
+              <li>Apple Watch</li>
+              <li>Widgets &amp; Live Activities</li>
+              <li>Mood tracking</li>
+            </ul>
             <div class="app-card-actions">
               <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237"
                  class="btn-appstore"
@@ -127,24 +140,32 @@
                   <span class="btn-appstore-main">App Store</span>
                 </span>
               </a>
-              <a href="https://productifyapp.org/" class="app-site-link" target="_blank" rel="noopener">
-                Visit productifyapp.org →
+              <a href="/products/productify/" class="app-site-link">
+                Learn more →
               </a>
             </div>
           </article>
 
           <!-- Plantive -->
           <article class="app-card">
-            <picture>
-              <source srcset="/assets/images/plantive-icon.webp" type="image/webp">
+            <div class="app-card-head">
               <img src="/assets/images/plantive-icon.png"
                    alt="Plantive app icon"
                    width="72" height="72"
                    class="app-icon"
                    loading="lazy">
-            </picture>
-            <h3>Plantive</h3>
-            <p class="app-card-desc">Identify any plant instantly and get care guidance tailored to that species — watering schedules, light needs, and seasonal tips.</p>
+              <div>
+                <h3>Plantive</h3>
+                <p class="app-card-kicker">Plant identifier &amp; care guide</p>
+              </div>
+            </div>
+            <p class="app-card-desc">Point your camera at a plant and know what it is in seconds — houseplants, flowers, trees, succulents. Then get the part that actually matters: how often to water it, how much light it wants, and what it needs season to season.</p>
+            <ul class="feature-chips" role="list">
+              <li>Instant photo ID</li>
+              <li>Per-species care</li>
+              <li>Watering &amp; light guidance</li>
+              <li>Your plant collection</li>
+            </ul>
             <div class="app-card-actions">
               <a href="https://apps.apple.com/us/app/plantive-identify-care/id6762530988"
                  class="btn-appstore"
@@ -166,13 +187,37 @@
       </div>
     </section>
 
+    <!-- How we build -->
+    <section class="values-section">
+      <div class="container">
+        <div class="portfolio-header">
+          <span class="section-label">How We Build</span>
+          <h2>Three rules we don't break.</h2>
+        </div>
+        <div class="values-grid">
+          <div class="value-card">
+            <h3>Your data is yours</h3>
+            <p>Productify stores every habit, goal, and mood entry locally on your iPhone — no accounts, no servers, no sale of your behaviour to anyone. Privacy isn't a settings toggle; it's the default.</p>
+          </div>
+          <div class="value-card">
+            <h3>Useful in ten seconds</h3>
+            <p>Open, do the one thing you came for, close. No onboarding mazes, no feeds to scroll, no notifications engineered to pull you back in when you don't need us.</p>
+          </div>
+          <div class="value-card">
+            <h3>Native, not wrapped</h3>
+            <p>Written for iOS with the platform's own tools, so you get Apple Watch, widgets, Live Activities, and the responsiveness you expect from an iPhone app.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- About excerpt -->
     <section class="about-excerpt">
       <div class="container">
         <span class="section-label">The Studio</span>
-        <h2>Built with intention.</h2>
-        <p>Deductify is a small independent iOS studio. We believe the best apps do one thing well and then get out of your way — no dark patterns, no engagement traps, no bloat. Every product we ship is designed to be genuinely useful in daily life without demanding your attention.</p>
-        <a href="/about/" class="btn btn-outline">Full story →</a>
+        <h2>Small studio, long horizon.</h2>
+        <p>Deductify is an independent iOS studio. We ship few apps and keep them going for years — Productify has been on the App Store since 2018 and is still updated. Nothing we build carries ads, dark patterns, or engagement traps, because the only thing we want from you is that the app is worth keeping on your home screen.</p>
+        <a href="/about/" class="btn btn-outline">More about us →</a>
       </div>
     </section>
 
