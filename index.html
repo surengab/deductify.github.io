@@ -3,44 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Deductify is an independent iOS studio making focused iPhone apps: Productify, a habit and goal tracker that keeps your data on your device, and Plantive, a plant identifier with per-species care guidance. Both free on the App Store.">
+  <meta name="description" content="Deductify is an independent product studio. We ship our own iOS apps, build IoT and connected-device systems for clients, and are developing Doseline, a medication adherence platform for care teams.">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="author" content="Deductify">
   <link rel="canonical" href="https://deductify.org/">
 
-  <meta property="og:title" content="Deductify — Independent iOS Studio">
-  <meta property="og:description" content="Focused iPhone apps for everyday life. Productify tracks your habits without leaving your device. Plantive identifies any plant and tells you how to care for it.">
+  <meta property="og:title" content="Deductify — iOS Products, IoT Engineering &amp; Digital Health">
+  <meta property="og:description" content="Deductify is an independent product studio. We ship our own iOS apps, build IoT and connected-device systems for clients, and are developing Doseline, a medication adherence platform for care teams.">
   <meta property="og:url" content="https://deductify.org/">
   <meta property="og:image" content="https://deductify.org/og-deductify.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Deductify — independent product studio">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Deductify">
+  <meta property="og:locale" content="en_US">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Deductify — Independent iOS Studio">
-  <meta name="twitter:description" content="Focused iPhone apps for everyday life. Productify tracks your habits without leaving your device. Plantive identifies any plant and tells you how to care for it.">
-  <meta name="twitter:image" content="https://deductify.org/og-deductify.jpg">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:image:alt" content="Deductify — Independent iOS Studio">
   <meta name="twitter:site" content="@Productify_app">
-  <meta name="twitter:image:alt" content="Deductify — Independent iOS Studio">
+  <meta name="twitter:title" content="Deductify — iOS Products, IoT Engineering &amp; Digital Health">
+  <meta name="twitter:description" content="Deductify is an independent product studio. We ship our own iOS apps, build IoT and connected-device systems for clients, and are developing Doseline, a medication adherence platform for care teams.">
+  <meta name="twitter:image" content="https://deductify.org/og-deductify.jpg">
 
-  <meta name="theme-color" content="#6B6FD4">
+  <meta name="theme-color" content="#0A0A0B">
+  <meta name="color-scheme" content="dark">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles.css">
-  <title>Deductify — Independent iOS Studio</title>
+  <title>Deductify — iOS Products, IoT Engineering &amp; Digital Health</title>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Deductify",
+    "legalName": "DEDUCTIFY, LLC",
     "url": "https://deductify.org/",
     "logo": "https://deductify.org/assets/images/deductify-logo.png",
     "email": "contact@deductify.org",
-    "description": "Independent iOS studio building calm, focused apps for everyday life.",
+    "description": "Independent product studio building iOS applications, IoT systems for clients, and digital health software.",
+    "knowsAbout": ["iOS development", "Internet of Things", "Bluetooth Low Energy", "Digital health", "Medication adherence"],
     "sameAs": [
       "https://x.com/Productify_app",
       "https://www.instagram.com/productify.habits"
@@ -53,10 +55,7 @@
     "@type": "WebSite",
     "name": "Deductify",
     "url": "https://deductify.org/",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Deductify"
-    }
+    "publisher": { "@type": "Organization", "name": "Deductify" }
   }
   </script>
 </head>
@@ -66,11 +65,14 @@
   <header>
     <nav class="site-nav" aria-label="Main navigation">
       <div class="nav-inner">
-        <a href="/" class="nav-logo" aria-label="Deductify home">Deductify</a>
+        <a href="/" class="nav-logo" aria-label="Deductify home">
+          <span class="nav-logo-mark" aria-hidden="true">D</span>Deductify
+        </a>
         <ul class="nav-links" role="list">
-          <li><a href="/#portfolio">Apps</a></li>
+          <li><a href="/#products">Products</a></li>
+          <li><a href="/services/">Services</a></li>
           <li><a href="/about/">About</a></li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/contact/" class="nav-cta">Start a project</a></li>
         </ul>
       </div>
     </nav>
@@ -81,105 +83,111 @@
     <!-- Hero -->
     <section class="hero">
       <div class="container">
-        <div class="hero-mark" aria-hidden="true">
-          <span class="hero-mark-letter">D</span>
-        </div>
-        <span class="section-label">Independent iOS Studio</span>
-        <h1>Apps that respect<br>your attention.</h1>
-        <p class="hero-tagline">Deductify builds focused iPhone apps for everyday life — a habit tracker that keeps your data on your device, and a plant identifier that tells you how to keep it alive.</p>
+        <span class="label">Independent Product Studio</span>
+        <h1>We build <span class="accent">connected software</span> for phones, devices, and clinics.</h1>
+        <p class="hero-lede">Deductify ships its own iOS products, engineers IoT and connected-device systems for clients, and is building Doseline — medication adherence software for care teams.</p>
         <div class="hero-ctas">
-          <a href="/#portfolio" class="btn btn-primary">See our apps</a>
-          <a href="/about/" class="btn btn-outline">About the studio</a>
+          <a href="/contact/" class="btn btn-primary">Start a project</a>
+          <a href="/#products" class="btn btn-ghost">See what we've built</a>
         </div>
-        <ul class="hero-meta" role="list">
-          <li>Built for iPhone, Apple Watch &amp; widgets</li>
-          <li>No ads, no tracking, no social feed</li>
-          <li>Shipping since 2018</li>
-        </ul>
       </div>
     </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-        <div class="portfolio-header">
-          <span class="section-label">Our Apps</span>
-          <h2>Two apps. Two everyday problems.</h2>
-          <p>Both are free to download on the App Store, built natively for iOS, and designed to be useful in seconds rather than minutes.</p>
+    <!-- Stats -->
+    <section style="padding:0">
+      <div class="container" style="padding:0">
+        <div class="stat-strip">
+          <div class="stat">
+            <div class="stat-num">2018</div>
+            <div class="stat-label">Shipping since</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">3</div>
+            <div class="stat-label">Products built</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span>0</span></div>
+            <div class="stat-label">Ads or trackers</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">48h</div>
+            <div class="stat-label">Typical first reply</div>
+          </div>
         </div>
-        <div class="portfolio-grid">
+      </div>
+    </section>
 
-          <!-- Productify -->
-          <article class="app-card">
-            <div class="app-card-head">
-              <img src="/assets/images/productify-icon.png"
-                   alt="Productify app icon"
-                   width="72" height="72"
-                   class="app-icon"
-                   loading="lazy">
-              <div>
-                <h3>Productify</h3>
-                <p class="app-card-kicker">Habit &amp; goal tracker</p>
-              </div>
+    <!-- Products -->
+    <section id="products">
+      <div class="container">
+        <div class="sec-head-row">
+          <div class="sec-head">
+            <span class="label"><span class="label-num">01</span> Our Products</span>
+            <h2>Software we own, end to end.</h2>
+            <p>We build our own products because it keeps us honest about the work we do for clients — the same constraints, the same App Store review, the same support inbox.</p>
+          </div>
+        </div>
+
+        <div class="product-grid">
+
+          <article class="card card-link product-card">
+            <div class="product-card-top">
+              <img src="/assets/images/productify-icon.png" alt="Productify app icon"
+                   width="60" height="60" class="product-icon" loading="lazy">
+              <span class="badge badge-live">On the App Store</span>
             </div>
-            <p class="app-card-desc">Set goals you can actually measure — walk 12,000 steps, drink 8 glasses, meditate 10 minutes — then watch the pattern build. Log your mood alongside your habits to see what your routine is really doing for you.</p>
-            <ul class="feature-chips" role="list">
-              <li>Data stays on your device</li>
-              <li>Apple Watch</li>
-              <li>Widgets &amp; Live Activities</li>
-              <li>Mood tracking</li>
+            <div>
+              <h3>Productify</h3>
+              <p class="product-kicker">Habit &amp; goal tracker</p>
+            </div>
+            <p>Measurable daily goals, progress statistics, and mood tracking — with every entry stored locally on the device. Ships with an Apple Watch app, widgets, and Live Activities.</p>
+            <ul class="chips" role="list">
+              <li>iOS</li><li>watchOS</li><li>On-device data</li>
             </ul>
-            <div class="app-card-actions">
-              <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237"
-                 class="btn-appstore"
-                 target="_blank"
-                 rel="noopener"
-                 aria-label="Download Productify on the App Store">
-                <span class="btn-appstore-text">
-                  <span class="btn-appstore-sub">Download on the</span>
-                  <span class="btn-appstore-main">App Store</span>
-                </span>
-              </a>
-              <a href="/products/productify/" class="app-site-link">
-                Learn more →
-              </a>
+            <div class="product-card-foot">
+              <a href="/products/productify/" class="link-arrow">Overview <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
-          <!-- Plantive -->
-          <article class="app-card">
-            <div class="app-card-head">
-              <img src="/assets/images/plantive-icon.png"
-                   alt="Plantive app icon"
-                   width="72" height="72"
-                   class="app-icon"
-                   loading="lazy">
-              <div>
-                <h3>Plantive</h3>
-                <p class="app-card-kicker">Plant identifier &amp; care guide</p>
-              </div>
+          <article class="card card-link product-card">
+            <div class="product-card-top">
+              <img src="/assets/images/plantive-icon.png" alt="Plantive app icon"
+                   width="60" height="60" class="product-icon" loading="lazy">
+              <span class="badge badge-live">On the App Store</span>
             </div>
-            <p class="app-card-desc">Point your camera at a plant and know what it is in seconds — houseplants, flowers, trees, succulents. Then get the part that actually matters: how often to water it, how much light it wants, and what it needs season to season.</p>
-            <ul class="feature-chips" role="list">
-              <li>Instant photo ID</li>
-              <li>Per-species care</li>
-              <li>Watering &amp; light guidance</li>
-              <li>Your plant collection</li>
+            <div>
+              <h3>Plantive</h3>
+              <p class="product-kicker">Plant identifier &amp; care</p>
+            </div>
+            <p>Identify a plant from a photo in seconds, then get care guidance for that species — watering intervals, light requirements, and seasonal notes, with your collection in one place.</p>
+            <ul class="chips" role="list">
+              <li>iOS</li><li>Vision</li><li>Care engine</li>
             </ul>
-            <div class="app-card-actions">
-              <a href="https://apps.apple.com/us/app/plantive-identify-care/id6762530988"
-                 class="btn-appstore"
-                 target="_blank"
-                 rel="noopener"
-                 aria-label="Download Plantive on the App Store">
-                <span class="btn-appstore-text">
-                  <span class="btn-appstore-sub">Download on the</span>
-                  <span class="btn-appstore-main">App Store</span>
-                </span>
-              </a>
-              <a href="/products/plantive/" class="app-site-link">
-                Learn more →
-              </a>
+            <div class="product-card-foot">
+              <a href="/products/plantive/" class="link-arrow">Overview <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="card card-link card-tick product-card">
+            <div class="product-card-top">
+              <div class="product-mark" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+                  <path d="M2 20h5l3-9 4 14 4-11 2.5 6H28" stroke="#A3E635" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <span class="badge badge-volt">In development</span>
+            </div>
+            <div>
+              <h3>Doseline</h3>
+              <p class="product-kicker">Medication adherence · B2B</p>
+            </div>
+            <p>A shared record of what a patient was prescribed and what they actually took. Clinicians set the regimen, patients confirm doses, and care teams see adherence before the next appointment instead of guessing at it.</p>
+            <ul class="chips" role="list">
+              <li>Clinics</li><li>Care teams</li><li>Early access</li>
+            </ul>
+            <div class="product-card-foot">
+              <a href="/products/doseline/" class="link-arrow">How it works <span aria-hidden="true">&rarr;</span></a>
             </div>
           </article>
 
@@ -187,37 +195,92 @@
       </div>
     </section>
 
-    <!-- How we build -->
-    <section class="values-section">
+    <!-- Services -->
+    <section class="section-line">
       <div class="container">
-        <div class="portfolio-header">
-          <span class="section-label">How We Build</span>
-          <h2>Three rules we don't break.</h2>
+        <div class="sec-head-row">
+          <div class="sec-head">
+            <span class="label"><span class="label-num">02</span> Client Services</span>
+            <h2>IoT engineering, from firmware to the phone in someone's hand.</h2>
+            <p>Connected hardware usually fails on the software seam — the pairing flow, the sync that breaks in a basement, the dashboard nobody can read. That seam is the work we take on.</p>
+          </div>
+          <a href="/services/" class="btn btn-ghost">Services in detail</a>
         </div>
-        <div class="values-grid">
-          <div class="value-card">
-            <h3>Your data is yours</h3>
-            <p>Productify stores every habit, goal, and mood entry locally on your iPhone — no accounts, no servers, no sale of your behaviour to anyone. Privacy isn't a settings toggle; it's the default.</p>
+
+        <div class="cap-grid">
+          <div class="cap">
+            <div class="cap-num">01</div>
+            <h3>Connected device apps</h3>
+            <p>iOS companion apps for Bluetooth LE, Matter, and Thread hardware — pairing, control, state sync, and the recovery paths for when a device drops off the network.</p>
           </div>
-          <div class="value-card">
-            <h3>Useful in ten seconds</h3>
-            <p>Open, do the one thing you came for, close. No onboarding mazes, no feeds to scroll, no notifications engineered to pull you back in when you don't need us.</p>
+          <div class="cap">
+            <div class="cap-num">02</div>
+            <h3>Firmware &amp; app integration</h3>
+            <p>Protocol and payload design across the hardware boundary, provisioning flows, and over-the-air update delivery that survives real-world connections.</p>
           </div>
-          <div class="value-card">
-            <h3>Native, not wrapped</h3>
-            <p>Written for iOS with the platform's own tools, so you get Apple Watch, widgets, Live Activities, and the responsiveness you expect from an iPhone app.</p>
+          <div class="cap">
+            <div class="cap-num">03</div>
+            <h3>Apple ecosystem depth</h3>
+            <p>HomeKit and Matter accessory integration, Apple Watch companions, widgets, Live Activities, and background execution that actually works within iOS limits.</p>
+          </div>
+          <div class="cap">
+            <div class="cap-num">04</div>
+            <h3>Offline-first sync</h3>
+            <p>Local-first data models, queued commands, and conflict resolution — so the product behaves predictably when connectivity is intermittent rather than assumed.</p>
+          </div>
+          <div class="cap">
+            <div class="cap-num">05</div>
+            <h3>Telemetry &amp; dashboards</h3>
+            <p>Device data ingestion, time-series storage, and operator views that answer the questions your support and ops teams actually ask.</p>
+          </div>
+          <div class="cap">
+            <div class="cap-num">06</div>
+            <h3>Onboarding &amp; security</h3>
+            <p>Credential and key handling on-device, secure provisioning, and setup flows measured by how many users complete them, not how many features they expose.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- About excerpt -->
-    <section class="about-excerpt">
+    <!-- Process -->
+    <section id="process" class="section-line">
       <div class="container">
-        <span class="section-label">The Studio</span>
-        <h2>Small studio, long horizon.</h2>
-        <p>Deductify is an independent iOS studio. We ship few apps and keep them going for years — Productify has been on the App Store since 2018 and is still updated. Nothing we build carries ads, dark patterns, or engagement traps, because the only thing we want from you is that the app is worth keeping on your home screen.</p>
-        <a href="/about/" class="btn btn-outline">More about us →</a>
+        <div class="sec-head">
+          <span class="label"><span class="label-num">03</span> How We Work</span>
+          <h2>Small team, direct line, no account managers.</h2>
+          <p>You talk to the people writing the code. Every engagement runs the same four phases, and you can stop after any one of them.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h3>Scope</h3>
+            <p>A paid discovery week. We map the hardware, the constraints, and the unknowns, and hand back a written technical plan you own outright.</p>
+          </div>
+          <div class="step">
+            <h3>Prototype</h3>
+            <p>The riskiest piece gets built first — usually the connection layer. If something can't work, we find out in week three rather than month five.</p>
+          </div>
+          <div class="step">
+            <h3>Build</h3>
+            <p>Two-week cycles with a working build at the end of each. You see progress on a device, not in a status document.</p>
+          </div>
+          <div class="step">
+            <h3>Ship &amp; hand over</h3>
+            <p>App Store submission, documentation, and a handover your own team can pick up. We stay on for support if you want it, not because you're locked in.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-band">
+      <div class="container">
+        <span class="label" style="justify-content:center">Let's talk</span>
+        <h2>Have connected hardware that needs software?</h2>
+        <p>Tell us what you're building and what's in the way. If we're not the right fit we'll say so, and usually point you somewhere better.</p>
+        <div class="hero-ctas">
+          <a href="/contact/" class="btn btn-primary">Start a project</a>
+          <a href="mailto:contact@deductify.org" class="btn btn-ghost">contact@deductify.org</a>
+        </div>
       </div>
     </section>
 
@@ -225,30 +288,48 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-inner">
+      <div class="footer-grid">
         <div class="footer-brand">
-          <a href="/" class="nav-logo">Deductify</a>
-          <p>Independent iOS studio.</p>
+          <a href="/" class="nav-logo">
+            <span class="nav-logo-mark" aria-hidden="true">D</span>Deductify
+          </a>
+          <p>An independent product studio building iOS applications, IoT systems, and digital health software.</p>
         </div>
-        <nav class="footer-nav-group" aria-label="Footer navigation">
-          <a href="/">Home</a>
-          <a href="/about/">About</a>
-          <a href="/products/productify/">Productify</a>
-          <a href="/products/plantive/">Plantive</a>
-          <a href="/contact/">Contact</a>
-          <a href="/privacy.html">Privacy</a>
-          <a href="/terms.html">Terms</a>
-        </nav>
-        <div class="footer-contact">
-          <p><a href="mailto:contact@deductify.org">contact@deductify.org</a></p>
-          <p>
-            <a href="https://x.com/Productify_app" target="_blank" rel="noopener">X</a> ·
-            <a href="https://www.instagram.com/productify.habits" target="_blank" rel="noopener">Instagram</a>
-          </p>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul role="list">
+            <li><a href="/products/productify/">Productify</a></li>
+            <li><a href="/products/plantive/">Plantive</a></li>
+            <li><a href="/products/doseline/">Doseline</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="/services/">IoT engineering</a></li>
+            <li><a href="/services/#process">How we work</a></li>
+            <li><a href="/services/#engagements">Engagements</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="/terms.html">Terms</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Deductify. All rights reserved.</span>
+        <span>&copy; 2026 DEDUCTIFY, LLC. All rights reserved.</span>
+        <span>
+          <a href="mailto:contact@deductify.org">contact@deductify.org</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://x.com/Productify_app" target="_blank" rel="noopener">X</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://www.instagram.com/productify.habits" target="_blank" rel="noopener">Instagram</a>
+        </span>
       </div>
     </div>
   </footer>

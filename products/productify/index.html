@@ -8,35 +8,41 @@
   <meta name="author" content="Deductify">
   <link rel="canonical" href="https://deductify.org/products/productify/">
 
-  <meta property="og:title" content="Productify — Habit Tracker for iPhone | Deductify">
-  <meta property="og:description" content="A habit and goal tracker for iPhone and Apple Watch. Measurable goals, mood tracking, and widgets — with every entry stored locally on your device. Free on the App Store.">
+  <meta property="og:title" content="Productify — Habit &amp; Goal Tracker for iPhone | Deductify">
+  <meta property="og:description" content="Productify is a habit and goal tracker for iPhone, iPad, and Apple Watch by Deductify. Measurable goals, mood tracking, widgets, and Live Activities — with all your data stored locally on your device. Free on the App Store.">
   <meta property="og:url" content="https://deductify.org/products/productify/">
   <meta property="og:image" content="https://deductify.org/og-deductify.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Deductify — independent product studio">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Deductify">
+  <meta property="og:locale" content="en_US">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Productify — Habit Tracker for iPhone | Deductify">
-  <meta name="twitter:description" content="A habit and goal tracker for iPhone and Apple Watch. Measurable goals, mood tracking, and widgets — with every entry stored locally on your device.">
+  <meta name="twitter:site" content="@Productify_app">
+  <meta name="twitter:title" content="Productify — Habit &amp; Goal Tracker for iPhone | Deductify">
+  <meta name="twitter:description" content="Productify is a habit and goal tracker for iPhone, iPad, and Apple Watch by Deductify. Measurable goals, mood tracking, widgets, and Live Activities — with all your data stored locally on your device. Free on the App Store.">
   <meta name="twitter:image" content="https://deductify.org/og-deductify.jpg">
 
-  <meta name="theme-color" content="#6B6FD4">
+  <meta name="theme-color" content="#0A0A0B">
+  <meta name="color-scheme" content="dark">
   <link rel="icon" type="image/png" href="/favicon.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles.css">
-  <title>Productify — Habit Tracker for iPhone | Deductify</title>
+  <title>Productify — Habit &amp; Goal Tracker for iPhone | Deductify</title>
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Deductify",
+    "legalName": "DEDUCTIFY, LLC",
     "url": "https://deductify.org/",
     "logo": "https://deductify.org/assets/images/deductify-logo.png",
     "email": "contact@deductify.org",
-    "description": "Independent iOS studio building calm, focused apps for everyday life.",
+    "description": "Independent product studio building iOS applications, IoT systems for clients, and digital health software.",
+    "knowsAbout": ["iOS development", "Internet of Things", "Bluetooth Low Energy", "Digital health", "Medication adherence"],
     "sameAs": [
       "https://x.com/Productify_app",
       "https://www.instagram.com/productify.habits"
@@ -53,16 +59,8 @@
     "url": "https://productifyapp.org/",
     "downloadUrl": "https://apps.apple.com/us/app/habit-tracker-productify/id1389900237",
     "description": "A habit and goal tracker for iPhone, iPad, and Apple Watch. Measurable goals, progress statistics, mood tracking, widgets, and Live Activities, with all data stored locally on the device.",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "author": {
-      "@type": "Organization",
-      "name": "Deductify",
-      "url": "https://deductify.org/"
-    }
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "author": { "@type": "Organization", "name": "Deductify", "url": "https://deductify.org/" }
   }
   </script>
 </head>
@@ -72,11 +70,14 @@
   <header>
     <nav class="site-nav" aria-label="Main navigation">
       <div class="nav-inner">
-        <a href="/" class="nav-logo" aria-label="Deductify home">Deductify</a>
+        <a href="/" class="nav-logo" aria-label="Deductify home">
+          <span class="nav-logo-mark" aria-hidden="true">D</span>Deductify
+        </a>
         <ul class="nav-links" role="list">
-          <li><a href="/#portfolio" aria-current="page">Apps</a></li>
+          <li><a href="/#products" aria-current="page">Products</a></li>
+          <li><a href="/services/">Services</a></li>
           <li><a href="/about/">About</a></li>
-          <li><a href="/contact/">Contact</a></li>
+          <li><a href="/contact/" class="nav-cta">Start a project</a></li>
         </ul>
       </div>
     </nav>
@@ -85,44 +86,37 @@
   <main id="main">
 
     <nav class="breadcrumb" aria-label="Breadcrumb">
-      <div class="container">
-        <a href="/">Deductify</a><span aria-hidden="true"> / </span><a href="/#portfolio">Apps</a><span aria-hidden="true"> / </span>Productify
-      </div>
+      <div class="container"><a href="/">Deductify</a><span aria-hidden="true">/</span><a href="/#products">Products</a><span aria-hidden="true">/</span>Productify</div>
     </nav>
 
-    <!-- Product hero -->
     <section class="page-hero">
       <div class="container">
         <div class="product-hero-inner">
-          <img src="/assets/images/productify-icon.png"
-               alt="Productify app icon"
-               width="110" height="110"
-               class="product-icon-large">
+          <img src="/assets/images/productify-icon.png" alt="Productify app icon"
+               width="96" height="96" class="product-icon-lg">
           <div class="product-hero-text">
             <h1>Productify</h1>
             <p class="tagline">Track the habits and goals that matter — without handing your data to anyone.</p>
-            <ul class="product-facts" role="list">
-              <li>Free · iPhone, iPad &amp; Apple Watch</li>
-              <li>iOS 17.2 or later</li>
-              <li>On the App Store since 2018</li>
-            </ul>
-            <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237"
-               class="btn-appstore"
-               target="_blank"
-               rel="noopener"
-               aria-label="Download Productify on the App Store">
-              <span class="btn-appstore-text">
-                <span class="btn-appstore-sub">Download on the</span>
-                <span class="btn-appstore-main">App Store</span>
-              </span>
-            </a>
+            <div class="product-hero-meta">
+              <span class="badge badge-live">On the App Store</span>
+              <span class="badge">Free</span>
+              <span class="badge">iPhone · iPad · Watch</span>
+            </div>
+            <div class="hero-ctas">
+              <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237" class="btn-appstore" target="_blank" rel="noopener" aria-label="Download Productify on the App Store">
+                <span class="btn-appstore-text">
+                  <span class="btn-appstore-sub">Download on the</span>
+                  <span class="btn-appstore-main">App Store</span>
+                </span>
+              </a>
+              <a href="https://productifyapp.org/" class="btn btn-ghost" target="_blank" rel="noopener">productifyapp.org</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Body -->
-    <section class="page-body">
+    <section class="prose">
       <div class="container-sm">
 
         <p>Productify is a habit and goal tracker for iPhone built around a simple idea: consistency, not perfection, is what creates lasting change. You set goals specific enough to be answerable — <em>walk 12,000 steps</em>, <em>drink 8 glasses of water</em>, <em>meditate for 10 minutes</em>, <em>call a friend every Sunday</em> — and Productify keeps the record. Start from ready-made habits or write your own.</p>
@@ -130,28 +124,28 @@
         <p>What you get back is a picture of your actual routine rather than a scoreboard. Progress views show how a habit has held up over weeks and months, and the mood tracker sits alongside them, so the connection between what you do and how you feel stops being a guess.</p>
 
         <h2>What's in the app</h2>
-        <div class="feature-grid">
-          <div class="feature-item">
+        <div class="feat-grid">
+          <div class="feat">
             <h3>Goals you can measure</h3>
             <p>Step counts, glasses of water, minutes of practice — targets with a number attached, so "did I do it?" always has an answer.</p>
           </div>
-          <div class="feature-item">
+          <div class="feat">
             <h3>Progress you can read</h3>
-            <p>Clear stats and history across days, weeks, and months. See which habits are holding and which quietly slipped.</p>
+            <p>Clear statistics and history across days, weeks, and months. See which habits are holding and which quietly slipped.</p>
           </div>
-          <div class="feature-item">
+          <div class="feat">
             <h3>Mood tracking</h3>
             <p>Log how you felt next to what you did. Patterns between routine and wellbeing surface on their own.</p>
           </div>
-          <div class="feature-item">
+          <div class="feat">
             <h3>AI progress insights</h3>
             <p>An optional coach that reads your history and offers specific, personal observations rather than generic encouragement.</p>
           </div>
-          <div class="feature-item">
+          <div class="feat">
             <h3>Widgets &amp; Live Activities</h3>
             <p>Today's habits on your home and lock screen, and running timers or step counts live while you're doing them.</p>
           </div>
-          <div class="feature-item">
+          <div class="feat">
             <h3>Apple Watch companion</h3>
             <p>Log a habit from your wrist. Nothing to open, nothing to unlock.</p>
           </div>
@@ -165,48 +159,44 @@
 
         <p>Productify suits anyone building or maintaining a personal routine — morning rituals, exercise, reading, hydration, meditation, creative practice. It's a good fit if you want structure and a real record of your progress, and a poor fit if you're looking for a social feed, a leaderboard, or an app that pesters you into opening it.</p>
 
-        <!-- CTA box -->
-        <div class="product-cta-box">
-          <p>Productify has its own full marketing site with detailed feature information, screenshots, and guides.</p>
-          <div class="product-cta-actions">
-            <a href="https://productifyapp.org/"
-               class="btn btn-primary"
-               target="_blank"
-               rel="noopener">
-              Visit productifyapp.org →
-            </a>
-            <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237"
-               class="btn-appstore"
-               target="_blank"
-               rel="noopener"
-               aria-label="Download Productify on the App Store">
-              <span class="btn-appstore-text">
-                <span class="btn-appstore-sub">Download on the</span>
-                <span class="btn-appstore-main">App Store</span>
-              </span>
-            </a>
-          </div>
+        <h2>Specifications</h2>
+        <div class="spec">
+          <div class="spec-row"><div class="spec-key">Platform</div><div class="spec-val">iPhone, iPad, Apple Watch</div></div>
+          <div class="spec-row"><div class="spec-key">Requires</div><div class="spec-val">iOS 17.2 or later</div></div>
+          <div class="spec-row"><div class="spec-key">Price</div><div class="spec-val">Free</div></div>
+          <div class="spec-row"><div class="spec-key">Data storage</div><div class="spec-val">On device only</div></div>
+          <div class="spec-row"><div class="spec-key">On the App Store</div><div class="spec-val">Since June 2018</div></div>
         </div>
 
-        <!-- Screenshots -->
         <h2>Screenshots</h2>
-        <p>For the full feature tour and support, see <a href="https://productifyapp.org/" target="_blank" rel="noopener">productifyapp.org</a>.</p>
-
-        <div class="product-screenshots" aria-label="Productify app screenshots">
+        <div class="shots" aria-label="Productify app screenshots">
           <img src="/assets/images/productify-screenshot-1.jpg"
                alt="Productify daily schedule showing habits grouped into morning, afternoon, and any time"
-               width="886" height="1575"
-               loading="lazy">
+               width="886" height="1575" loading="lazy">
           <img src="/assets/images/productify-screenshot-2.jpg"
                alt="Productify habit library with ready-made habits grouped by Body and Mind"
-               width="886" height="1575"
-               loading="lazy">
+               width="886" height="1575" loading="lazy">
           <img src="/assets/images/productify-screenshot-3.jpg"
                alt="Productify progress view showing 7- and 30-day completion rates per habit"
-               width="886" height="1575"
-               loading="lazy">
+               width="886" height="1575" loading="lazy">
         </div>
 
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Free on the App Store.</h2>
+        <p>Productify has been shipping and getting updates since 2018. The full feature tour and support live on its own site.</p>
+        <div class="hero-ctas">
+          <a href="https://apps.apple.com/us/app/habit-tracker-productify/id1389900237" class="btn-appstore" target="_blank" rel="noopener" aria-label="Download Productify on the App Store">
+                <span class="btn-appstore-text">
+                  <span class="btn-appstore-sub">Download on the</span>
+                  <span class="btn-appstore-main">App Store</span>
+                </span>
+              </a>
+          <a href="https://productifyapp.org/" class="btn btn-ghost" target="_blank" rel="noopener">productifyapp.org</a>
+        </div>
       </div>
     </section>
 
@@ -214,30 +204,48 @@
 
   <footer class="site-footer" role="contentinfo">
     <div class="container">
-      <div class="footer-inner">
+      <div class="footer-grid">
         <div class="footer-brand">
-          <a href="/" class="nav-logo">Deductify</a>
-          <p>Independent iOS studio.</p>
+          <a href="/" class="nav-logo">
+            <span class="nav-logo-mark" aria-hidden="true">D</span>Deductify
+          </a>
+          <p>An independent product studio building iOS applications, IoT systems, and digital health software.</p>
         </div>
-        <nav class="footer-nav-group" aria-label="Footer navigation">
-          <a href="/">Home</a>
-          <a href="/about/">About</a>
-          <a href="/products/productify/">Productify</a>
-          <a href="/products/plantive/">Plantive</a>
-          <a href="/contact/">Contact</a>
-          <a href="/privacy.html">Privacy</a>
-          <a href="/terms.html">Terms</a>
-        </nav>
-        <div class="footer-contact">
-          <p><a href="mailto:contact@deductify.org">contact@deductify.org</a></p>
-          <p>
-            <a href="https://x.com/Productify_app" target="_blank" rel="noopener">X</a> ·
-            <a href="https://www.instagram.com/productify.habits" target="_blank" rel="noopener">Instagram</a>
-          </p>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul role="list">
+            <li><a href="/products/productify/">Productify</a></li>
+            <li><a href="/products/plantive/">Plantive</a></li>
+            <li><a href="/products/doseline/">Doseline</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul role="list">
+            <li><a href="/services/">IoT engineering</a></li>
+            <li><a href="/services/#process">How we work</a></li>
+            <li><a href="/services/#engagements">Engagements</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul role="list">
+            <li><a href="/about/">About</a></li>
+            <li><a href="/contact/">Contact</a></li>
+            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="/terms.html">Terms</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>© 2026 Deductify. All rights reserved.</span>
+        <span>&copy; 2026 DEDUCTIFY, LLC. All rights reserved.</span>
+        <span>
+          <a href="mailto:contact@deductify.org">contact@deductify.org</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://x.com/Productify_app" target="_blank" rel="noopener">X</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://www.instagram.com/productify.habits" target="_blank" rel="noopener">Instagram</a>
+        </span>
       </div>
     </div>
   </footer>
