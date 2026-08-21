@@ -27,7 +27,9 @@
 
   <meta name="theme-color" content="#0A0A0B">
   <meta name="color-scheme" content="dark">
-  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="stylesheet" href="/styles.css">
   <title>Deductify: iOS Products, IoT Engineering &amp; Digital Health</title>
@@ -43,6 +45,11 @@
     "email": "contact@deductify.org",
     "description": "Independent product studio building iOS applications, IoT systems for clients, and digital health software.",
     "knowsAbout": ["iOS development", "Internet of Things", "Bluetooth Low Energy", "Digital health", "Medication adherence"],
+    "owns": [
+      { "@type": "MobileApplication", "name": "Productify", "url": "https://productifyapp.org/" },
+      { "@type": "MobileApplication", "name": "Plantive", "url": "https://plantiveapp.com/" },
+      { "@type": "MobileApplication", "name": "CareDuo", "url": "https://careduo.app/" }
+    ],
     "sameAs": [
       "https://x.com/Productify_app",
       "https://www.instagram.com/productify.habits"
@@ -107,7 +114,7 @@
             <div class="stat-label">Shipping since</div>
           </div>
           <div class="stat">
-            <div class="stat-num">3</div>
+            <div class="stat-num">4</div>
             <div class="stat-label">Products built</div>
           </div>
           <div class="stat">
@@ -150,7 +157,8 @@
               <li>iOS</li><li>watchOS</li><li>On-device data</li>
             </ul>
             <div class="product-card-foot">
-              <a href="/products/productify/" class="link-arrow">Overview <span aria-hidden="true">&rarr;</span></a>
+              <a href="/products/productify/" class="link-arrow link-cover">Overview <span aria-hidden="true">&rarr;</span></a>
+              <a href="https://productifyapp.org/" class="link-arrow link-over" target="_blank" rel="noopener">Site <span aria-hidden="true">&nearr;</span></a>
             </div>
           </article>
 
@@ -169,7 +177,8 @@
               <li>iOS</li><li>Vision</li><li>Care engine</li>
             </ul>
             <div class="product-card-foot">
-              <a href="/products/plantive/" class="link-arrow">Overview <span aria-hidden="true">&rarr;</span></a>
+              <a href="/products/plantive/" class="link-arrow link-cover">Overview <span aria-hidden="true">&rarr;</span></a>
+              <a href="https://plantiveapp.com/" class="link-arrow link-over" target="_blank" rel="noopener">Site <span aria-hidden="true">&nearr;</span></a>
             </div>
           </article>
 
@@ -192,7 +201,35 @@
               <li>Clinics</li><li>Care teams</li><li>Early access</li>
             </ul>
             <div class="product-card-foot">
-              <a href="/products/doseline/" class="link-arrow">How it works <span aria-hidden="true">&rarr;</span></a>
+              <a href="/products/doseline/" class="link-arrow link-cover">How it works <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="card card-link product-card">
+            <div class="product-card-top">
+              <div class="product-mark" aria-hidden="true">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" aria-hidden="true">
+                  <circle cx="11" cy="9.5" r="4.5" stroke="#A3E635" stroke-width="2"/>
+                  <circle cx="21.5" cy="13" r="3.5" stroke="#A3E635" stroke-width="2"/>
+                  <path d="M3.5 25c1.6-4.2 4.2-6.3 7.5-6.3s5.9 2.1 7.5 6.3" stroke="#A3E635"
+                        stroke-width="2" stroke-linecap="round"/>
+                  <path d="M20 25c.7-2.3 1.9-3.5 3.5-3.5S26.3 22.7 27 25" stroke="#A3E635"
+                        stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="badge badge-volt">Coming soon</span>
+            </div>
+            <div>
+              <h3>CareDuo</h3>
+              <p class="product-kicker">Medication reminders &middot; Family</p>
+            </div>
+            <p>A medication reminder built for two people. One taps once to confirm a dose, and the family member who worries sees it happen, or hears about it when a dose is missed.</p>
+            <ul class="chips" role="list">
+              <li>iOS 18</li><li>Caregiver alerts</li><li>Refills</li>
+            </ul>
+            <div class="product-card-foot">
+              <a href="/products/careduo/" class="link-arrow link-cover">Overview <span aria-hidden="true">&rarr;</span></a>
+              <a href="https://careduo.app/" class="link-arrow link-over" target="_blank" rel="noopener">Site <span aria-hidden="true">&nearr;</span></a>
             </div>
           </article>
 
@@ -306,6 +343,7 @@
             <li><a href="/products/productify/">Productify</a></li>
             <li><a href="/products/plantive/">Plantive</a></li>
             <li><a href="/products/doseline/">Doseline</a></li>
+            <li><a href="/products/careduo/">CareDuo</a></li>
           </ul>
         </div>
         <div class="footer-col">

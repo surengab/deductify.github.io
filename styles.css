@@ -294,7 +294,7 @@ section { padding: 6rem 0; }
   display: grid; grid-template-columns: 1fr; gap: 1.25rem;
 }
 @media (min-width: 720px)  { .product-grid { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 1040px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1180px) { .product-grid { grid-template-columns: repeat(4, 1fr); } }
 
 .product-card {
   display: flex; flex-direction: column; gap: 1.125rem;
@@ -324,6 +324,12 @@ section { padding: 6rem 0; }
   display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
   margin-top: auto; padding-top: .75rem;
 }
+/* The whole card is clickable: the primary foot link covers it.
+   The external site link sits above that overlay so it stays reachable. */
+.product-card .link-cover::after {
+  content: ""; position: absolute; inset: 0; border-radius: var(--r); z-index: 1;
+}
+.product-card .link-over { position: relative; z-index: 2; }
 
 /* --- Chips --- */
 .chips { display: flex; flex-wrap: wrap; gap: .4375rem; }
